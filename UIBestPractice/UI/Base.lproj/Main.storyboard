@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tln-Dq-UOA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7pG-IU-VTk">
+            <objects>
+                <navigationController id="Tln-Dq-UOA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TW5-V9-nuI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OAh-Kr-VbB" kind="relationship" relationship="rootViewController" id="D6I-Xn-jIF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qR3-j5-dN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="139"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="1Tl-0P-NHi">
+            <objects>
+                <viewController id="OAh-Kr-VbB" customClass="FirstViewController" customModule="UIBestPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GUm-Xc-Utj"/>
+                    <connections>
+                        <segue destination="sB3-P4-0yD" kind="show" identifier="toSecondView" id="oar-ch-irI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJG-am-ygZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="139"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Odm-p7-prF">
+            <objects>
+                <viewController id="sB3-P4-0yD" customClass="SecondViewController" customModule="UIBestPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gr4-p3-2fY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xes-iS-Ube" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="139"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_UIBestPractice {
+  umbrella header "Pods-UIBestPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
